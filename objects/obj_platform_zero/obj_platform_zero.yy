@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_platform_main",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_platform_zero",
+  "eventList":[],
   "managed":true,
-  "name":"obj_platform_main",
+  "name":"obj_platform_zero",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Platforms",
+    "path":"folders/Objects/Platforms.yy",
   },
-  "parentObjectId":{
-    "name":"obj_screen_scroll",
-    "path":"objects/obj_screen_scroll/obj_screen_scroll.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +27,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_plat_zero",
+    "path":"sprites/spr_plat_zero/spr_plat_zero.yy",
+  },
   "spriteMaskId":null,
+  "tags":[
+    "plat",
+  ],
   "visible":true,
 }

@@ -6,8 +6,8 @@
   "name":"obj_platform_seg_mid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Procedural",
+    "path":"folders/Objects/Platforms/Procedural.yy",
   },
   "parentObjectId":{
     "name":"obj_screen_scroll",

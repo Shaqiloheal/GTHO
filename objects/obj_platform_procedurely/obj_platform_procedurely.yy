@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lava",
-  "eventList":[],
+  "%Name":"obj_platform_procedurely",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_lava",
+  "name":"obj_platform_procedurely",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Procedural",
+    "path":"folders/Objects/Platforms/Procedural.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_screen_scroll",
+    "path":"objects/obj_screen_scroll/obj_screen_scroll.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_lava",
-    "path":"sprites/spr_lava/spr_lava.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

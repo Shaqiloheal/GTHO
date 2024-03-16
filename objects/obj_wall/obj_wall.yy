@@ -8,8 +8,8 @@
   "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Platforms",
+    "path":"folders/Objects/Platforms.yy",
   },
   "parentObjectId":{
     "name":"obj_screen_scroll",

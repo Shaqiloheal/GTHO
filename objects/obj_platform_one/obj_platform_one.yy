@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lava",
+  "%Name":"obj_platform_one",
   "eventList":[],
   "managed":true,
-  "name":"obj_lava",
+  "name":"obj_platform_one",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Platforms",
+    "path":"folders/Objects/Platforms.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +28,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lava",
-    "path":"sprites/spr_lava/spr_lava.yy",
+    "name":"spr_plat_one",
+    "path":"sprites/spr_plat_one/spr_plat_one.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "plat",
+  ],
   "visible":true,
 }

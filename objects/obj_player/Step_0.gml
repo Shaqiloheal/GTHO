@@ -61,7 +61,7 @@ if y < room_height / 4 {
 }
 
 // Vertical Collision
-if (place_meeting(x,y+vsp,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
+if (place_meeting(x,y+vsp,tag_get_asset_ids("plats", asset_)))
 {
 	if sprite_index == spr_player_jump {
 		sprite_index = spr_player_idle;
