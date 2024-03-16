@@ -42,6 +42,16 @@ if (place_meeting(x+hsp,y, [obj_wall, obj_platform_seg_left, obj_platform_seg_mi
 }
 x = x + hsp;
 
+if y < room_height / 2 {
+	if vsp < 0 {
+		var _scroll_speed = -vsp;
+		with(obj_screen_scroll) {
+			y += _scroll_speed;
+		}
+		y = room_height / 2;
+	}
+}
+
 // Vertical Collision
 if (place_meeting(x,y+vsp,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 {
