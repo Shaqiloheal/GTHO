@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-num_of_tiles = 1;
+num_of_tiles = choose(0,1,2);
 
 instance_create_layer(x, y, "Platforms", obj_platform_seg_left);
 
