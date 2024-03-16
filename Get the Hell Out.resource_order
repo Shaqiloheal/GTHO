@@ -23,8 +23,8 @@
     {"name":"obj_platform_seg_left","order":5,"path":"objects/obj_platform_seg_left/obj_platform_seg_left.yy",},
     {"name":"obj_platform_seg_mid","order":6,"path":"objects/obj_platform_seg_mid/obj_platform_seg_mid.yy",},
     {"name":"obj_platform_seg_right","order":7,"path":"objects/obj_platform_seg_right/obj_platform_seg_right.yy",},
-    {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"obj_screen_scroll","order":8,"path":"objects/obj_screen_scroll/obj_screen_scroll.yy",},
+    {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"obj_back","order":3,"path":"sprites/obj_back/obj_back.yy",},
     {"name":"spr_lava","order":5,"path":"sprites/spr_lava/spr_lava.yy",},
     {"name":"spr_plat_left","order":1,"path":"sprites/spr_plat_left/spr_plat_left.yy",},
@@ -33,5 +33,6 @@
     {"name":"spr_player_idle","order":3,"path":"sprites/spr_player_idle/spr_player_idle.yy",},
     {"name":"spr_player_walk","order":2,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"spr_player2","order":1,"path":"sprites/spr_player2/spr_player2.yy",},
+    {"name":"spr_player_jump","order":7,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
   ],
 }

@@ -12,17 +12,23 @@ hsp = _move * walksp * _key_sprint;
 
 if (hsp > 0)
 {
-	sprite_index = spr_player_walk;
+	if sprite_index != spr_player_jump {
+		sprite_index = spr_player_walk;
+	}
 	image_xscale = 1;
 }
 else if (hsp == 0) 
 {
-	sprite_index = spr_player_idle;
+	if sprite_index != spr_player_jump {
+		sprite_index = spr_player_idle;
+	}	
 }
 else
 {
-	sprite_index = spr_player_walk;
-	image_xscale = -1;	
+	if sprite_index != spr_player_jump {
+		sprite_index = spr_player_walk;
+	}
+	image_xscale = -1;
 }
 
 vsp = vsp + grv;
@@ -30,6 +36,7 @@ vsp = vsp + grv;
 if (place_meeting(x,y+1,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right])) and (_key_jump)
 {
 	vsp = -20;
+	sprite_index = spr_player_jump;
 }
 
 // Horizontal Collision
@@ -56,6 +63,9 @@ if y < room_height / 4 {
 // Vertical Collision
 if (place_meeting(x,y+vsp,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 {
+	if sprite_index == spr_player_jump {
+		sprite_index = spr_player_idle;
+	}	
 	while (!place_meeting(x,y+sign(vsp),[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 	{
 			y = y + sign(vsp);
