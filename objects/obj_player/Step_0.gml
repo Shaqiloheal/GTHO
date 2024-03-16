@@ -1,13 +1,13 @@
 /// @description 
 // Get Player Input
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check(vk_space);
+var _key_left = keyboard_check(ord("A")) or keyboard_check(vk_left);
+var _key_right = keyboard_check(ord("D")) or keyboard_check(vk_right);
+var _key_jump = keyboard_check(vk_space) or keyboard_check(vk_up);
 
 // Calculate Movement
-var move = key_right - key_left;
+var _move = _key_right - _key_left;
 
-hsp = move * walksp;
+hsp = _move * walksp;
 
 if (hsp > 0)
 {
@@ -26,15 +26,15 @@ else
 
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,obj_wall)) and (key_jump)
+if (place_meeting(x,y+1,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right])) and (_key_jump)
 {
-	vsp = -11;
+	vsp = -20;
 }
 
 // Horizontal Collision
-if (place_meeting(x+hsp,y,obj_wall))
+if (place_meeting(x+hsp,y, [obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 {
-	while (!place_meeting(x+sign(hsp),y,obj_wall))
+	while (!place_meeting(x+sign(hsp),y,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 	{
 			x = x + sign(hsp);
 	}
@@ -43,12 +43,13 @@ if (place_meeting(x+hsp,y,obj_wall))
 x = x + hsp;
 
 // Vertical Collision
-if (place_meeting(x,y+vsp,obj_wall))
+if (place_meeting(x,y+vsp,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 {
-	while (!place_meeting(x,y+sign(vsp),obj_wall))
+	while (!place_meeting(x,y+sign(vsp),[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
 	{
 			y = y + sign(vsp);
 	}
 	vsp = 0;
 }
+
 y = y + vsp;
