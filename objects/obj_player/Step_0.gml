@@ -58,6 +58,9 @@ if y < room_height / 4 {
 		with(obj_screen_scroll) {
 			y += _scroll_speed;
 		}
+		var _back_y = layer_get_y("Background");
+		
+		layer_y("Background", _back_y +_scroll_speed);
 		y = room_height / 4;
 	}
 }
@@ -76,3 +79,4 @@ if (place_meeting(x,y+vsp,_plats))
 }
 
 y = y + vsp;
+

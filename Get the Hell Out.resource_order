@@ -48,5 +48,6 @@
     {"name":"spr_player_jump","order":6,"path":"sprites/spr_player_jump/spr_player_jump.yy",},
     {"name":"spr_player_walk","order":2,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
     {"name":"spr_player2","order":1,"path":"sprites/spr_player2/spr_player2.yy",},
+    {"name":"spr_background","order":9,"path":"sprites/spr_background/spr_background.yy",},
   ],
 }
