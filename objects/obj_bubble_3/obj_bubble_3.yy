@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lava",
-  "eventList":[],
+  "%Name":"obj_bubble_3",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_lava",
+  "name":"obj_bubble_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Bubbles",
+    "path":"folders/Objects/Lava/Bubbles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_screen_scroll",
+    "path":"objects/obj_screen_scroll/obj_screen_scroll.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lava",
-    "path":"sprites/spr_lava/spr_lava.yy",
+    "name":"spr_bubble_3",
+    "path":"sprites/spr_bubble_3/spr_bubble_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

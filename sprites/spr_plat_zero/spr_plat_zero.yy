@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_plat_zero",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":211,
   "bbox_left":7,
   "bbox_right":217,

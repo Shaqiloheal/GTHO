@@ -33,16 +33,18 @@ else
 
 vsp = vsp + grv;
 
-if (place_meeting(x,y+1,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right])) and (_key_jump)
+var _plats =  tag_get_asset_ids("plat", asset_object);
+
+if (place_meeting(x,y+1,_plats)) and (_key_jump)
 {
 	vsp = -20;
 	sprite_index = spr_player_jump;
 }
 
 // Horizontal Collision
-if (place_meeting(x+hsp,y, [obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
+if (place_meeting(x+hsp,y,_plats))
 {
-	while (!place_meeting(x+sign(hsp),y,[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
+	while (!place_meeting(x+sign(hsp),y,_plats))
 	{
 			x = x + sign(hsp);
 	}
@@ -59,14 +61,14 @@ if y < room_height / 4 {
 		y = room_height / 4;
 	}
 }
-
 // Vertical Collision
-if (place_meeting(x,y+vsp,tag_get_asset_ids("plats", asset_)))
+
+if (place_meeting(x,y+vsp,_plats))
 {
 	if sprite_index == spr_player_jump {
 		sprite_index = spr_player_idle;
 	}	
-	while (!place_meeting(x,y+sign(vsp),[obj_wall, obj_platform_seg_left, obj_platform_seg_mid, obj_platform_seg_right]))
+	while (!place_meeting(x,y+sign(vsp),_plats))
 	{
 			y = y + sign(vsp);
 	}

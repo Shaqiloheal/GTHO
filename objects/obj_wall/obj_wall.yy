@@ -37,5 +37,8 @@
     "path":"sprites/spr_floor/spr_floor.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "plat",
+  ],
   "visible":true,
 }
