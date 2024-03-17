@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[],
+  "%Name":"obj_progress_bar",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_progress_bar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Platforms",
-    "path":"folders/Objects/Platforms.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,12 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_progress_bar",
+    "path":"sprites/spr_progress_bar/spr_progress_bar.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "plat",
-  ],
   "visible":true,
 }

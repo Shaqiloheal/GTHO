@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[],
+  "%Name":"obj_ground",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_ground",
   "overriddenProperties":[],
   "parent":{
     "name":"Platforms",
     "path":"folders/Objects/Platforms.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_screen_scroll",
+    "path":"objects/obj_screen_scroll/obj_screen_scroll.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_floor",
+    "path":"sprites/spr_floor/spr_floor.yy",
   },
   "spriteMaskId":null,
   "tags":[

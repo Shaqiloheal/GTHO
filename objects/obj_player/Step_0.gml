@@ -61,6 +61,8 @@ if y < room_height / 4 {
 		var _back_y = layer_get_y("Background");
 		
 		layer_y("Background", _back_y +_scroll_speed);
+		
+		height_reached += _scroll_speed;
 		y = room_height / 4;
 	}
 }
