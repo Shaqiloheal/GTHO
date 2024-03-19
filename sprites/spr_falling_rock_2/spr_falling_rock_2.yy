@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_falling_rock_2",
-  "bboxMode":2,
-  "bbox_bottom":1651,
-  "bbox_left":135,
-  "bbox_right":802,
-  "bbox_top":200,
+  "bboxMode":0,
+  "bbox_bottom":244,
+  "bbox_left":20,
+  "bbox_right":118,
+  "bbox_top":25,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":1811,
+  "height":272,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"0180e06f-e2ef-4580-9be9-aeb901f7a1a6","blendMode":0,"displayName":"default","isLocked":false,"name":"0180e06f-e2ef-4580-9be9-aeb901f7a1a6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":939,
+  "width":141,
 }
